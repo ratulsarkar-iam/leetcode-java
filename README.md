@@ -66,7 +66,7 @@ leetcode-java/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/leetcode-java.git
+   git clone https://github.com/ratulsarkar-iam/leetcode-java.git
    cd leetcode-java
    ```
 
