@@ -1,67 +1,151 @@
-echo "# Leetcode Problems in Java
+# LeetCode Solutions in Java
 
-This repository contains solutions to various Leetcode problems grouped by difficulty levels. The solutions are implemented in **Java** and are intended for **study** and **educational purposes only**.
+![Java](https://img.shields.io/badge/Java-17-orange?style=flat&logo=openjdk)
+![LeetCode](https://img.shields.io/badge/LeetCode-Problems-green?style=flat&logo=leetcode)
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat)
 
-## Project Structure
+A comprehensive collection of LeetCode problem solutions implemented in Java 17. This repository serves as a personal learning archive and reference for algorithmic problem-solving techniques.
 
-The project is organized as follows:
+## 📋 Table of Contents
 
-\`\`\`
-src/
-├── com/
-│   └── rs/
-│       └── leetcode/
-│           ├── easy/
-│           │   └── Leetcode_9.java
-│           ├── med/
-│           │   ├── Leetcode_7.java
-│           │   └── Leetcode_204.java
-│           └── Leetcode_Main.java
-└── module-info.java
-\`\`\`
+- [Project Overview](#-project-overview)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Problem Categories](#-problem-categories)
+- [Solution Highlights](#-solution-highlights)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Disclaimer](#-disclaimer)
 
-### Folders:
-- **easy/**: Contains solutions to problems categorized as \"Easy\".
-- **med/**: Contains solutions to problems categorized as \"Medium\".
-- **Leetcode_Main.java**: Entry point for testing the solutions.
+## 🎯 Project Overview
 
-## Requirements
+This repository contains well-documented Java solutions to various LeetCode problems, organized by difficulty level. Each solution includes:
 
-- **Java 17** (as specified in the project settings)
-- IDE: Eclipse or any Java-compatible IDE (e.g., IntelliJ IDEA, Visual Studio Code)
+- Clean, readable code following Java best practices
+- Time and space complexity analysis
+- Detailed comments explaining the approach
+- Test cases demonstrating the solution
 
-## How to Run
+## 📁 Project Structure
 
-1. Clone the repository:
-   \`\`\`bash
+```
+leetcode-java/
+├── src/
+│   ├── com/
+│   │   └── rs/
+│   │       └── leetcode/
+│   │           ├── easy/          # Easy difficulty problems
+│   │           │   └── Leetcode_9.java
+│   │           ├── med/           # Medium difficulty problems
+│   │           │   ├── Leetcode_7.java
+│   │           │   └── Leetcode_204.java
+│   │           └── Leetcode_Main.java  # Main test runner
+│   └── module-info.java
+├── README.md
+└── LICENSE
+```
+
+### Directory Descriptions
+
+- **`easy/`** - Solutions for problems marked as Easy difficulty
+- **`med/`** - Solutions for problems marked as Medium difficulty
+- **`hard/`** - Solutions for problems marked as Hard difficulty (to be added)
+- **`Leetcode_Main.java`** - Entry point for running and testing solutions
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Java Development Kit (JDK) 17** or later
+- A Java IDE such as:
+  - IntelliJ IDEA
+  - Eclipse
+  - Visual Studio Code with Java Extension Pack
+
+### Installation & Setup
+
+1. **Clone the repository**
+   ```bash
    git clone https://github.com/your-username/leetcode-java.git
-   \`\`\`
-2. Open the project in your preferred IDE.
-3. Run the \`Leetcode_Main.java\` file to test the solutions.
+   cd leetcode-java
+   ```
 
-## Example Problems
+2. **Import in your IDE**
+   - For IntelliJ IDEA: File → Open → Select the project directory
+   - For Eclipse: File → Import → Maven → Existing Maven Projects
+   - For VS Code: Open folder and install the Java Extension Pack
 
-### Easy
-- **Leetcode 9**: Check if an integer is a palindrome without converting it to a string.  
-  File: [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java)
+3. **Run the solutions**
+   ```bash
+   # Compile and run using command line
+   javac src/com/rs/leetcode/Leetcode_Main.java
+   java -cp src com.rs.leetcode.Leetcode_Main
+   ```
 
-### Medium
-- **Leetcode 7**: Reverse digits of a signed 32-bit integer.  
-  File: [Leetcode_7.java](src/com/rs/leetcode/med/Leetcode_7.java)
-- **Leetcode 204**: Count the number of prime numbers less than a given number using the Sieve of Eratosthenes.  
-  File: [Leetcode_204.java](src/com/rs/leetcode/med/Leetcode_204.java)
+## 📚 Problem Categories
 
-## Purpose
+### Easy Problems
+| Problem # | Title | Solution | Time Complexity | Space Complexity |
+|-----------|-------|----------|-----------------|------------------|
+| 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log₁₀ n) | O(1) |
 
-This project is created for:
-- **Learning**: Understand and practice Java programming.
-- **Problem-Solving**: Improve algorithmic thinking by solving Leetcode problems.
-- **Education**: Share solutions for educational purposes.
+### Medium Problems
+| Problem # | Title | Solution | Time Complexity | Space Complexity |
+|-----------|-------|----------|-----------------|------------------|
+| 7 | Reverse Integer | [Leetcode_7.java](src/com/rs/leetcode/med/Leetcode_7.java) | O(log₁₀ n) | O(1) |
+| 204 | Count Primes | [Leetcode_204.java](src/com/rs/leetcode/med/Leetcode_204.java) | O(n log log n) | O(n) |
 
-## Disclaimer
+## ✨ Solution Highlights
 
-This repository is for **study and educational purposes only**. Please do not use these solutions for cheating or violating Leetcode's terms of service.
+### Featured Algorithms
 
-## License
+- **Two Pointers Technique** - Used in Palindrome Number problem
+- **Mathematical Operations** - Integer reversal with overflow handling
+- **Sieve of Eratosthenes** - Efficient prime number counting
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details." > README.md
+### Key Learning Points
+
+- Understanding edge cases and constraints
+- Optimizing solutions for better time/space complexity
+- Implementing clean, maintainable code
+- Proper error handling and input validation
+
+## 🤝 Contributing
+
+While this is primarily a personal learning repository, contributions are welcome in the form of:
+
+1. **Bug Reports** - If you find any errors in the solutions
+2. **Optimization Suggestions** - Better approaches to solved problems
+3. **New Solutions** - Additional LeetCode problems not yet implemented
+
+To contribute:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request with a clear description
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## ⚠️ Disclaimer
+
+This repository is intended for **educational purposes only**. The solutions provided are meant to help understand algorithms and improve problem-solving skills. Please:
+
+- Use these solutions as a learning reference, not for submission
+- Understand the logic before using any code
+- Respect LeetCode's terms of service
+- Try solving problems independently first
+
+## 📈 Progress Tracking
+
+- **Total Problems Solved**: 3
+- **Easy**: 1/1 ✅
+- **Medium**: 2/2 ✅
+- **Hard**: 0/0 ❌
+
+---
+
+**Happy Coding!** 🎉
+
+If you find this repository helpful, consider giving it a ⭐ star!
