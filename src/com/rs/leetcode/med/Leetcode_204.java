@@ -77,11 +77,9 @@ public class Leetcode_204 {
 		}
 		return count;
 	}
-	public int sieveOfEratosthenes_prime_count_1(int n) { //Time Limit Exceeded
+	public int sieveOfEratosthenes_prime_count_1(int n) { 
 
-//		if (n < 2) {
-//			return 0;
-//		}
+
 		int count = 0;
 		// initial all are prime - consider
 		boolean[] isPrime= new boolean[n];
