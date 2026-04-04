@@ -63,8 +63,6 @@ public class Leetcode_74 {
             } else {
                 end = midR - 1;
             }
-
-
         }
         return false;
     }
