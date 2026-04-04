@@ -6,4 +6,5 @@
  *
  */
 module Leetcode {
+    requires java.net.http;
 }

@@ -35,11 +35,16 @@ leetcode-java/
 │   │   └── rs/
 │   │       └── leetcode/
 │   │           ├── easy/          # Easy difficulty problems
+│   │           │   ├── Leetcode_1.java
 │   │           │   └── Leetcode_9.java
-│   │           ├── med/           # Medium difficulty problems
+│   │           ├── med/          # Medium difficulty problems
+│   │           │   ├── Leetcode_151.java
+│   │           │   ├── Leetcode_204.java
 │   │           │   ├── Leetcode_7.java
-│   │           │   └── Leetcode_204.java
-│   │           └── Leetcode_Main.java  # Main test runner
+│   │           │   └── Leetcode_74.java
+│   │           ├── Leetcode_Main.java  # Main test runner
+│   │           ├── MetaGenerator.java  # Main test runner
+│   │           └── ReadmeUpdater.java  # README auto-updater
 │   └── module-info.java
 ├── README.md
 └── LICENSE
@@ -87,22 +92,26 @@ leetcode-java/
 ### Easy Problems
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
 |-----------|-------|----------|-----------------|------------------|
-| 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log₁₀ n) | O(1) |
+| 1 | Two Sum | [Leetcode_1.java](src/com/rs/leetcode/easy/Leetcode_1.java) | O(n) | O(n) |
+| 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n) | O(1) |
 
 ### Medium Problems
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
 |-----------|-------|----------|-----------------|------------------|
-| 7 | Reverse Integer | [Leetcode_7.java](src/com/rs/leetcode/med/Leetcode_7.java) | O(log₁₀ n) | O(1) |
-| 74 | Search a 2D Matrix | [Leetcode_74.java](src/com/rs/leetcode/med/Leetcode_74.java) | O(log(m * n))| O(1) |
+| 7 | Reverse Integer | [Leetcode_7.java](src/com/rs/leetcode/med/Leetcode_7.java) | O(log n) | O(1) |
+| 74 | Search a 2D Matrix | [Leetcode_74.java](src/com/rs/leetcode/med/Leetcode_74.java) | O(log(m * n)) | O(1) |
+| 151 | Reverse Words in a String | [Leetcode_151.java](src/com/rs/leetcode/med/Leetcode_151.java) | O(n) | O(n) |
 | 204 | Count Primes | [Leetcode_204.java](src/com/rs/leetcode/med/Leetcode_204.java) | O(n log log n) | O(n) |
 
 ## ✨ Solution Highlights
 
 ### Featured Algorithms
 
-- **Two Pointers Technique** - Used in Palindrome Number problem
-- **Mathematical Operations** - Integer reversal with overflow handling
-- **Sieve of Eratosthenes** - Efficient prime number counting
+- **Hash Map** - Used in Two Sum problem
+- **Mathematical Operations** - Used in Palindrome Number problem
+- **Binary Search** - Used in Search a 2D Matrix problem
+- **String Manipulation** - Used in Reverse Words in a String problem
+- **Sieve of Eratosthenes** - Used in Count Primes problem
 
 ### Key Learning Points
 
@@ -140,10 +149,10 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 3
-- **Easy**: 1/1 ✅
-- **Medium**: 2/2 ✅
-- **Hard**: 0/0 ❌
+- **Total Problems Solved**: 6
+- **Easy**: 2 ✅
+- **Medium**: 4 ✅
+- **Hard**: 0 ❌
 
 ---
 

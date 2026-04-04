@@ -23,3 +23,7 @@
 # Ignore OS-specific files
 .DS_Store
 Thumbs.db
+
+# Ignore utility classes
+src/com/rs/leetcode/ReadmeUpdater.java
+src/com/rs/leetcode/MetaGenerator.java

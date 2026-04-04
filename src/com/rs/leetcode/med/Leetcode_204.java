@@ -1,5 +1,12 @@
 package com.rs.leetcode.med;
 
+/* @LeetcodeMeta
+ * @Title: Count Primes
+ * @TimeComplexity: O(n log log n)
+ * @SpaceComplexity: O(n)
+ * @Algorithm: Sieve of Eratosthenes
+ */
+
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,5 +1,12 @@
 package com.rs.leetcode.med;
 
+/* @LeetcodeMeta
+ * @Title: Search a 2D Matrix
+ * @TimeComplexity: O(log(m * n))
+ * @SpaceComplexity: O(1)
+ * @Algorithm: Binary Search
+ */
+
 /*
 * You are given an m x n integer matrix matrix with the following two properties:
 
