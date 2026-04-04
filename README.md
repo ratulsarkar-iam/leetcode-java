@@ -36,6 +36,7 @@ leetcode-java/
 │   │       └── leetcode/
 │   │           ├── easy/          # Easy difficulty problems
 │   │           │   ├── Leetcode_1.java
+│   │           │   ├── Leetcode_344.java
 │   │           │   └── Leetcode_9.java
 │   │           ├── med/          # Medium difficulty problems
 │   │           │   ├── Leetcode_151.java
@@ -94,6 +95,7 @@ leetcode-java/
 |-----------|-------|----------|-----------------|------------------|
 | 1 | Two Sum | [Leetcode_1.java](src/com/rs/leetcode/easy/Leetcode_1.java) | O(n) | O(n) |
 | 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n) | O(1) |
+| 344 | Reverse String | [Leetcode_344.java](src/com/rs/leetcode/easy/Leetcode_344.java) | O(n) | O(1) |
 
 ### Medium Problems
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
@@ -109,6 +111,7 @@ leetcode-java/
 
 - **Hash Map** - Used in Two Sum problem
 - **Mathematical Operations** - Used in Palindrome Number problem
+- **Two Pointers** - Used in Reverse String problem
 - **Binary Search** - Used in Search a 2D Matrix problem
 - **String Manipulation** - Used in Reverse Words in a String problem
 - **Sieve of Eratosthenes** - Used in Count Primes problem
@@ -149,8 +152,8 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 6
-- **Easy**: 2 ✅
+- **Total Problems Solved**: 7
+- **Easy**: 3 ✅
 - **Medium**: 4 ✅
 - **Hard**: 0 ❌
 
