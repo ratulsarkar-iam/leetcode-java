@@ -45,6 +45,17 @@ Follow-up: If the string data type is mutable in your language, can you solve it
 */
 public class Leetcode_151 {
     public String reverseWords (String s) {
-        return s;
+        String[] sArray = s.trim ().split (" ");
+        StringBuilder stringBuilder = new StringBuilder ();
+        for (int i = sArray.length - 1; i >= 0; i--) {
+            if (sArray[i].isEmpty ()) {
+                continue;
+            }
+            stringBuilder.append (sArray[i]);
+            if (i > 0) {
+                stringBuilder.append (" ");
+            }
+        }
+        return stringBuilder.toString ();
     }
 }
