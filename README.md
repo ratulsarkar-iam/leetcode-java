@@ -98,7 +98,7 @@ leetcode-java/
 |-----------|-------|----------|-----------------|------------------|
 | 1 | Two Sum | [Leetcode_1.java](src/com/rs/leetcode/easy/Leetcode_1.java) | O(n) | O(n) |
 | 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n) | O(1) |
-| 169 | Majority Element | [Leetcode_169.java](src/com/rs/leetcode/easy/Leetcode_169.java) | O(1) | O(1) |
+| 169 | Majority Element | [Leetcode_169.java](src/com/rs/leetcode/easy/Leetcode_169.java) | O(n) | O(n) |
 | 344 | Reverse String | [Leetcode_344.java](src/com/rs/leetcode/easy/Leetcode_344.java) | O(n) | O(1) |
 
 ### Medium Problems
@@ -117,8 +117,8 @@ leetcode-java/
 
 - **Hash Map** - Used in Two Sum problem
 - **Mathematical Operations** - Used in Palindrome Number problem
-- **TODO** - Used in Majority Element problem
 - **Two Pointers** - Used in Reverse String problem
+- **TODO** - Used in Pow(x, n) problem
 - **Kadan's Algorithm** - Used in Maximum Subarray problem
 - **Binary Search** - Used in Search a 2D Matrix problem
 - **String Manipulation** - Used in Reverse Words in a String problem
