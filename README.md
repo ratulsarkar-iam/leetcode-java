@@ -42,6 +42,7 @@ leetcode-java/
 │   │           ├── med/          # Medium difficulty problems
 │   │           │   ├── Leetcode_151.java
 │   │           │   ├── Leetcode_204.java
+│   │           │   ├── Leetcode_50.java
 │   │           │   ├── Leetcode_53.java
 │   │           │   ├── Leetcode_7.java
 │   │           │   └── Leetcode_74.java
@@ -104,6 +105,7 @@ leetcode-java/
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
 |-----------|-------|----------|-----------------|------------------|
 | 7 | Reverse Integer | [Leetcode_7.java](src/com/rs/leetcode/med/Leetcode_7.java) | O(log n) | O(1) |
+| 50 | Pow(x, n) | [Leetcode_50.java](src/com/rs/leetcode/med/Leetcode_50.java) | O(log n) | O(1) |
 | 53 | Maximum Subarray | [Leetcode_53.java](src/com/rs/leetcode/med/Leetcode_53.java) | O(n) | O(1) |
 | 74 | Search a 2D Matrix | [Leetcode_74.java](src/com/rs/leetcode/med/Leetcode_74.java) | O(log(m * n)) | O(1) |
 | 151 | Reverse Words in a String | [Leetcode_151.java](src/com/rs/leetcode/med/Leetcode_151.java) | O(n) | O(n) |
@@ -158,9 +160,9 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 9
+- **Total Problems Solved**: 10
 - **Easy**: 4 ✅
-- **Medium**: 5 ✅
+- **Medium**: 6 ✅
 - **Hard**: 0 ❌
 
 ---
