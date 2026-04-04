@@ -36,11 +36,13 @@ leetcode-java/
 │   │       └── leetcode/
 │   │           ├── easy/          # Easy difficulty problems
 │   │           │   ├── Leetcode_1.java
+│   │           │   ├── Leetcode_169.java
 │   │           │   ├── Leetcode_344.java
 │   │           │   └── Leetcode_9.java
 │   │           ├── med/          # Medium difficulty problems
 │   │           │   ├── Leetcode_151.java
 │   │           │   ├── Leetcode_204.java
+│   │           │   ├── Leetcode_53.java
 │   │           │   ├── Leetcode_7.java
 │   │           │   └── Leetcode_74.java
 │   │           ├── Leetcode_Main.java  # Main test runner
@@ -95,12 +97,14 @@ leetcode-java/
 |-----------|-------|----------|-----------------|------------------|
 | 1 | Two Sum | [Leetcode_1.java](src/com/rs/leetcode/easy/Leetcode_1.java) | O(n) | O(n) |
 | 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n) | O(1) |
+| 169 | Majority Element | [Leetcode_169.java](src/com/rs/leetcode/easy/Leetcode_169.java) | O(1) | O(1) |
 | 344 | Reverse String | [Leetcode_344.java](src/com/rs/leetcode/easy/Leetcode_344.java) | O(n) | O(1) |
 
 ### Medium Problems
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
 |-----------|-------|----------|-----------------|------------------|
 | 7 | Reverse Integer | [Leetcode_7.java](src/com/rs/leetcode/med/Leetcode_7.java) | O(log n) | O(1) |
+| 53 | Maximum Subarray | [Leetcode_53.java](src/com/rs/leetcode/med/Leetcode_53.java) | O(n) | O(1) |
 | 74 | Search a 2D Matrix | [Leetcode_74.java](src/com/rs/leetcode/med/Leetcode_74.java) | O(log(m * n)) | O(1) |
 | 151 | Reverse Words in a String | [Leetcode_151.java](src/com/rs/leetcode/med/Leetcode_151.java) | O(n) | O(n) |
 | 204 | Count Primes | [Leetcode_204.java](src/com/rs/leetcode/med/Leetcode_204.java) | O(n log log n) | O(n) |
@@ -111,7 +115,9 @@ leetcode-java/
 
 - **Hash Map** - Used in Two Sum problem
 - **Mathematical Operations** - Used in Palindrome Number problem
+- **TODO** - Used in Majority Element problem
 - **Two Pointers** - Used in Reverse String problem
+- **Kadan's Algorithm** - Used in Maximum Subarray problem
 - **Binary Search** - Used in Search a 2D Matrix problem
 - **String Manipulation** - Used in Reverse Words in a String problem
 - **Sieve of Eratosthenes** - Used in Count Primes problem
@@ -152,9 +158,9 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 7
-- **Easy**: 3 ✅
-- **Medium**: 4 ✅
+- **Total Problems Solved**: 9
+- **Easy**: 4 ✅
+- **Medium**: 5 ✅
 - **Hard**: 0 ❌
 
 ---
