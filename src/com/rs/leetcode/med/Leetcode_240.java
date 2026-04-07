@@ -1,4 +1,11 @@
 package com.rs.leetcode.med;
+/* @LeetcodeMeta
+ * @Title: Search a 2D Matrix II
+ * @TimeComplexity: O(n log n)
+ * @SpaceComplexity: O(1)
+ * @Algorithm: TODO
+ */
+
 /*
 * Write an efficient algorithm that searches for a value target in an m x n integer matrix matrix. This matrix has the following properties:
 
@@ -35,6 +42,25 @@ All the integers in each column are sorted in ascending order.
  */
 public class Leetcode_240 {
     public boolean searchMatrix (int[][] matrix, int target) {
+        int height = matrix.length;
+        int width = matrix[0].length;
+        for (int i = 0; i < height; i++) {
+            if (matrix[i][0] <= target && matrix[i][width - 1] >= target) {
+                // binary search;
+                int st = 0;
+                int end = width - 1;
+                while (st <= end) {
+                    int mid = st + (end - st) / 2;
+                    if (matrix[i][mid] == target) {
+                        return true;
+                    } else if (target < matrix[i][mid]) {
+                        end = mid - 1;
+                    } else {
+                        st = mid + 1;
+                    }
+                }
+            }
+        }
         return false;
     }
 }

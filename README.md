@@ -37,11 +37,13 @@ leetcode-java/
 │   │           ├── easy/          # Easy difficulty problems
 │   │           │   ├── Leetcode_1.java
 │   │           │   ├── Leetcode_169.java
+│   │           │   ├── Leetcode_2965.java
 │   │           │   ├── Leetcode_344.java
 │   │           │   └── Leetcode_9.java
 │   │           ├── med/          # Medium difficulty problems
 │   │           │   ├── Leetcode_151.java
 │   │           │   ├── Leetcode_204.java
+│   │           │   ├── Leetcode_240.java
 │   │           │   ├── Leetcode_50.java
 │   │           │   ├── Leetcode_53.java
 │   │           │   ├── Leetcode_7.java
@@ -100,6 +102,7 @@ leetcode-java/
 | 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n) | O(1) |
 | 169 | Majority Element | [Leetcode_169.java](src/com/rs/leetcode/easy/Leetcode_169.java) | O(n) | O(n) |
 | 344 | Reverse String | [Leetcode_344.java](src/com/rs/leetcode/easy/Leetcode_344.java) | O(n) | O(1) |
+| 2965 | Find Missing and Repeated Values | [Leetcode_2965.java](src/com/rs/leetcode/easy/Leetcode_2965.java) | O(n^2) | O(n) |
 
 ### Medium Problems
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
@@ -110,6 +113,7 @@ leetcode-java/
 | 74 | Search a 2D Matrix | [Leetcode_74.java](src/com/rs/leetcode/med/Leetcode_74.java) | O(log(m * n)) | O(1) |
 | 151 | Reverse Words in a String | [Leetcode_151.java](src/com/rs/leetcode/med/Leetcode_151.java) | O(n) | O(n) |
 | 204 | Count Primes | [Leetcode_204.java](src/com/rs/leetcode/med/Leetcode_204.java) | O(n log log n) | O(n) |
+| 240 | Search a 2D Matrix II | [Leetcode_240.java](src/com/rs/leetcode/med/Leetcode_240.java) | O(n log n) | O(1) |
 
 ## ✨ Solution Highlights
 
@@ -160,9 +164,9 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 10
-- **Easy**: 4 ✅
-- **Medium**: 6 ✅
+- **Total Problems Solved**: 12
+- **Easy**: 5 ✅
+- **Medium**: 7 ✅
 - **Hard**: 0 ❌
 
 ---
