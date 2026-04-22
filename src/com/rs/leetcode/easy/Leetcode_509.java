@@ -40,7 +40,7 @@ package com.rs.leetcode.easy;
  */
 public class Leetcode_509 {
     // brute force
-    // TC: O(2^n)
+    // TC: O(2^n) -
     public int fib (int n) {
         if (n == 0 || n == 1) {
             return n;

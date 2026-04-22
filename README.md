@@ -99,14 +99,14 @@ leetcode-java/
 ## 📚 Problem Categories
 
 ### Easy Problems
-| Problem # | Title | Solution | Time Complexity | Space Complexity |
-|-----------|-------|----------|-----------------|------------------|
-| 1 | Two Sum | [Leetcode_1.java](src/com/rs/leetcode/easy/Leetcode_1.java) | O(n) | O(n) |
-| 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n) | O(1) |
-| 169 | Majority Element | [Leetcode_169.java](src/com/rs/leetcode/easy/Leetcode_169.java) | O(n) | O(n) |
-| 344 | Reverse String | [Leetcode_344.java](src/com/rs/leetcode/easy/Leetcode_344.java) | O(n) | O(1) |
-| 509 | Fibonacci Number | [Leetcode_509.java](src/com/rs/leetcode/easy/Leetcode_509.java) | - | - |
-| 2965 | Find Missing and Repeated Values | [Leetcode_2965.java](src/com/rs/leetcode/easy/Leetcode_2965.java) | O(n^2) | O(n) |
+| Problem # | Title | Solution | Time Complexity           | Space Complexity |
+|-----------|-------|----------|---------------------------|------------------|
+| 1 | Two Sum | [Leetcode_1.java](src/com/rs/leetcode/easy/Leetcode_1.java) | O(n)                      | O(n) |
+| 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n)                  | O(1) |
+| 169 | Majority Element | [Leetcode_169.java](src/com/rs/leetcode/easy/Leetcode_169.java) | O(n)                      | O(n) |
+| 344 | Reverse String | [Leetcode_344.java](src/com/rs/leetcode/easy/Leetcode_344.java) | O(n)                      | O(1) |
+| 509 | Fibonacci Number | [Leetcode_509.java](src/com/rs/leetcode/easy/Leetcode_509.java) | Golden Ratio (O(1.618)^n) | - |
+| 2965 | Find Missing and Repeated Values | [Leetcode_2965.java](src/com/rs/leetcode/easy/Leetcode_2965.java) | O(n^2)                    | O(n) |
 
 ### Medium Problems
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
