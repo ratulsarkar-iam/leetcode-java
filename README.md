@@ -39,6 +39,7 @@ leetcode-java/
 │   │           │   ├── Leetcode_169.java
 │   │           │   ├── Leetcode_2965.java
 │   │           │   ├── Leetcode_344.java
+│   │           │   ├── Leetcode_509.java
 │   │           │   └── Leetcode_9.java
 │   │           ├── med/          # Medium difficulty problems
 │   │           │   ├── Leetcode_15.java
@@ -104,6 +105,7 @@ leetcode-java/
 | 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n) | O(1) |
 | 169 | Majority Element | [Leetcode_169.java](src/com/rs/leetcode/easy/Leetcode_169.java) | O(n) | O(n) |
 | 344 | Reverse String | [Leetcode_344.java](src/com/rs/leetcode/easy/Leetcode_344.java) | O(n) | O(1) |
+| 509 | Fibonacci Number | [Leetcode_509.java](src/com/rs/leetcode/easy/Leetcode_509.java) | - | - |
 | 2965 | Find Missing and Repeated Values | [Leetcode_2965.java](src/com/rs/leetcode/easy/Leetcode_2965.java) | O(n^2) | O(n) |
 
 ### Medium Problems
@@ -169,8 +171,8 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 14
-- **Easy**: 5 ✅
+- **Total Problems Solved**: 15
+- **Easy**: 6 ✅
 - **Medium**: 9 ✅
 - **Hard**: 0 ❌
 
