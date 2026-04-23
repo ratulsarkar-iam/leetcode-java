@@ -76,6 +76,29 @@ import java.util.List;
  * - Current list: At most n elements
  * - Output storage: O(n × 2^n) for the result (not counted in auxiliary space)
  *
+ * 
+ * 
+ * 
+ * Start: list = [], i = 0
+
+Path 1 (include 1):  list = [1], i = 1
+  → include 2:       list = [1,2], i = 2
+    → include 3:     list = [1,2,3], i = 3 → BASE CASE → ADD [1,2,3]
+    → exclude 3:     list = [1,2], i = 3   → BASE CASE → ADD [1,2]
+  → exclude 2:       list = [1], i = 2
+    → include 3:     list = [1,3], i = 3   → BASE CASE → ADD [1,3]
+    → exclude 3:     list = [1], i = 3     → BASE CASE → ADD [1]
+
+Path 2 (exclude 1):  list = [], i = 1
+  → include 2:       list = [2], i = 2
+    → include 3:     list = [2,3], i = 3   → BASE CASE → ADD [2,3]
+    → exclude 3:     list = [2], i = 3     → BASE CASE → ADD [2]
+  → exclude 2:       list = [], i = 2
+    → include 3:     list = [3], i = 3     → BASE CASE → ADD [3]
+    → exclude 3:     list = [], i = 3      → BASE CASE → ADD []
+
+Final result: [[1,2,3], [1,2], [1,3], [1], [2,3], [2], [3], []]
+ * 
  */
 public class Leetcode_78 {
     public List<List<Integer>> subsets(int[] nums) {
