@@ -40,6 +40,7 @@ leetcode-java/
 │   │           │   ├── Leetcode_2965.java
 │   │           │   ├── Leetcode_344.java
 │   │           │   ├── Leetcode_509.java
+│   │           │   ├── Leetcode_704.java
 │   │           │   └── Leetcode_9.java
 │   │           ├── med/          # Medium difficulty problems
 │   │           │   ├── Leetcode_15.java
@@ -99,14 +100,15 @@ leetcode-java/
 ## 📚 Problem Categories
 
 ### Easy Problems
-| Problem # | Title | Solution | Time Complexity           | Space Complexity |
-|-----------|-------|----------|---------------------------|------------------|
-| 1 | Two Sum | [Leetcode_1.java](src/com/rs/leetcode/easy/Leetcode_1.java) | O(n)                      | O(n) |
-| 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n)                  | O(1) |
-| 169 | Majority Element | [Leetcode_169.java](src/com/rs/leetcode/easy/Leetcode_169.java) | O(n)                      | O(n) |
-| 344 | Reverse String | [Leetcode_344.java](src/com/rs/leetcode/easy/Leetcode_344.java) | O(n)                      | O(1) |
+| Problem # | Title | Solution | Time Complexity | Space Complexity |
+|-----------|-------|----------|----------------|------------------|
+| 1 | Two Sum | [Leetcode_1.java](src/com/rs/leetcode/easy/Leetcode_1.java) | O(n) | O(n) |
+| 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n) | O(1) |
+| 169 | Majority Element | [Leetcode_169.java](src/com/rs/leetcode/easy/Leetcode_169.java) | O(n) | O(n) |
+| 344 | Reverse String | [Leetcode_344.java](src/com/rs/leetcode/easy/Leetcode_344.java) | O(n) | O(1) |
 | 509 | Fibonacci Number | [Leetcode_509.java](src/com/rs/leetcode/easy/Leetcode_509.java) | Golden Ratio (O(1.618)^n) | - |
-| 2965 | Find Missing and Repeated Values | [Leetcode_2965.java](src/com/rs/leetcode/easy/Leetcode_2965.java) | O(n^2)                    | O(n) |
+| 704 | Binary Search | [Leetcode_704.java](src/com/rs/leetcode/easy/Leetcode_704.java) | O(log n) | O(1) |
+| 2965 | Find Missing and Repeated Values | [Leetcode_2965.java](src/com/rs/leetcode/easy/Leetcode_2965.java) | O(n^2) | O(n) |
 
 ### Medium Problems
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
@@ -128,8 +130,8 @@ leetcode-java/
 - **Hash Map** - Used in Two Sum problem
 - **Mathematical Operations** - Used in Palindrome Number problem
 - **Two Pointers** - Used in Reverse String problem
+- **TODO** - Used in Binary Search problem
 - **Sorting** - Used in 3Sum problem
-- **TODO** - Used in Pow(x, n) problem
 - **Kadan's Algorithm** - Used in Maximum Subarray problem
 - **Binary Search** - Used in Search a 2D Matrix problem
 - **String Manipulation** - Used in Reverse Words in a String problem
@@ -171,8 +173,8 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 15
-- **Easy**: 6 ✅
+- **Total Problems Solved**: 16
+- **Easy**: 7 ✅
 - **Medium**: 9 ✅
 - **Hard**: 0 ❌
 

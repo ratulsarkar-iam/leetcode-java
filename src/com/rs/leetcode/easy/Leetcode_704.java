@@ -1,5 +1,12 @@
 package com.rs.leetcode.easy;
 
+/* @LeetcodeMeta
+ * @Title: Binary Search
+ * @TimeComplexity: O(log n)
+ * @SpaceComplexity: O(1)
+ * @Algorithm: TODO
+ */
+
 /**
  * Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
  * <p>
