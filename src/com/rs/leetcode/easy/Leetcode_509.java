@@ -2,6 +2,7 @@ package com.rs.leetcode.easy;
 
 /* @LeetcodeMeta
  * @Title: Fibonacci Number
+ *  @TimeComplexity: Golden Ratio (O(1.618)^n)
 
  */
 

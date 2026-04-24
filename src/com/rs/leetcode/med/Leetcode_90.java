@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/* @LeetcodeMeta
+ * @Title: Subsets II
+ * @TimeComplexity: O(n × 2^n)
+ * @SpaceComplexity: O(n) auxiliary
+ * @Algorithm: Sorting
+ */
+
 /**
  *
  * Given an integer array nums that may contain duplicates, return all possible subsets (the power set).

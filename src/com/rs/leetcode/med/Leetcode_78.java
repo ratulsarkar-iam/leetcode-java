@@ -3,6 +3,13 @@ package com.rs.leetcode.med;
 import java.util.ArrayList;
 import java.util.List;
 
+/* @LeetcodeMeta
+ * @Title: Subsets
+ * @TimeComplexity: O(n × 2^n)
+ * @SpaceComplexity: O(n)
+ * @Algorithm: Backtracking
+ */
+
 /**
  *
  * Given an integer array nums of unique elements, return all possible subsets (the power set).

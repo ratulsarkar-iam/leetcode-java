@@ -51,7 +51,9 @@ leetcode-java/
 │   │           │   ├── Leetcode_50.java
 │   │           │   ├── Leetcode_53.java
 │   │           │   ├── Leetcode_7.java
-│   │           │   └── Leetcode_74.java
+│   │           │   ├── Leetcode_74.java
+│   │           │   ├── Leetcode_78.java
+│   │           │   └── Leetcode_90.java
 │   │           ├── Leetcode_Main.java  # Main test runner
 │   │           ├── MetaGenerator.java  # Main test runner
 │   │           └── ReadmeUpdater.java  # README auto-updater
@@ -101,7 +103,7 @@ leetcode-java/
 
 ### Easy Problems
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
-|-----------|-------|----------|----------------|------------------|
+|-----------|-------|----------|-----------------|------------------|
 | 1 | Two Sum | [Leetcode_1.java](src/com/rs/leetcode/easy/Leetcode_1.java) | O(n) | O(n) |
 | 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n) | O(1) |
 | 169 | Majority Element | [Leetcode_169.java](src/com/rs/leetcode/easy/Leetcode_169.java) | O(n) | O(n) |
@@ -119,6 +121,8 @@ leetcode-java/
 | 50 | Pow(x, n) | [Leetcode_50.java](src/com/rs/leetcode/med/Leetcode_50.java) | O(log n) | O(1) |
 | 53 | Maximum Subarray | [Leetcode_53.java](src/com/rs/leetcode/med/Leetcode_53.java) | O(n) | O(1) |
 | 74 | Search a 2D Matrix | [Leetcode_74.java](src/com/rs/leetcode/med/Leetcode_74.java) | O(log(m * n)) | O(1) |
+| 78 | Subsets | [Leetcode_78.java](src/com/rs/leetcode/med/Leetcode_78.java) | O(n × 2^n) | O(n) |
+| 90 | Subsets II | [Leetcode_90.java](src/com/rs/leetcode/med/Leetcode_90.java) | O(n × 2^n) | O(n) auxiliary |
 | 151 | Reverse Words in a String | [Leetcode_151.java](src/com/rs/leetcode/med/Leetcode_151.java) | O(n) | O(n) |
 | 204 | Count Primes | [Leetcode_204.java](src/com/rs/leetcode/med/Leetcode_204.java) | O(n log log n) | O(n) |
 | 240 | Search a 2D Matrix II | [Leetcode_240.java](src/com/rs/leetcode/med/Leetcode_240.java) | O(n log n) | O(1) |
@@ -134,6 +138,7 @@ leetcode-java/
 - **Sorting** - Used in 3Sum problem
 - **Kadan's Algorithm** - Used in Maximum Subarray problem
 - **Binary Search** - Used in Search a 2D Matrix problem
+- **Backtracking** - Used in Subsets problem
 - **String Manipulation** - Used in Reverse Words in a String problem
 - **Sieve of Eratosthenes** - Used in Count Primes problem
 
@@ -173,9 +178,9 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 16
+- **Total Problems Solved**: 18
 - **Easy**: 7 ✅
-- **Medium**: 9 ✅
+- **Medium**: 11 ✅
 - **Hard**: 0 ❌
 
 ---
