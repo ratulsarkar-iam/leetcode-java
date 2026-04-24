@@ -48,6 +48,7 @@ leetcode-java/
 │   │           │   ├── Leetcode_18.java
 │   │           │   ├── Leetcode_204.java
 │   │           │   ├── Leetcode_240.java
+│   │           │   ├── Leetcode_46.java
 │   │           │   ├── Leetcode_50.java
 │   │           │   ├── Leetcode_53.java
 │   │           │   ├── Leetcode_7.java
@@ -118,6 +119,7 @@ leetcode-java/
 | 7 | Reverse Integer | [Leetcode_7.java](src/com/rs/leetcode/med/Leetcode_7.java) | O(log n) | O(1) |
 | 15 | 3Sum | [Leetcode_15.java](src/com/rs/leetcode/med/Leetcode_15.java) | O(n^3) | O(n) |
 | 18 | 4Sum | [Leetcode_18.java](src/com/rs/leetcode/med/Leetcode_18.java) | O(n^4) | O(n) |
+| 46 | Permutations | [Leetcode_46.java](src/com/rs/leetcode/med/Leetcode_46.java) | O(n!*n) | O(n!+n) |
 | 50 | Pow(x, n) | [Leetcode_50.java](src/com/rs/leetcode/med/Leetcode_50.java) | O(log n) | O(1) |
 | 53 | Maximum Subarray | [Leetcode_53.java](src/com/rs/leetcode/med/Leetcode_53.java) | O(n) | O(1) |
 | 74 | Search a 2D Matrix | [Leetcode_74.java](src/com/rs/leetcode/med/Leetcode_74.java) | O(log(m * n)) | O(1) |
@@ -136,9 +138,9 @@ leetcode-java/
 - **Two Pointers** - Used in Reverse String problem
 - **TODO** - Used in Binary Search problem
 - **Sorting** - Used in 3Sum problem
+- **Backtracking** - Used in Permutations problem
 - **Kadan's Algorithm** - Used in Maximum Subarray problem
 - **Binary Search** - Used in Search a 2D Matrix problem
-- **Backtracking** - Used in Subsets problem
 - **String Manipulation** - Used in Reverse Words in a String problem
 - **Sieve of Eratosthenes** - Used in Count Primes problem
 
@@ -178,9 +180,9 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 18
+- **Total Problems Solved**: 19
 - **Easy**: 7 ✅
-- **Medium**: 11 ✅
+- **Medium**: 12 ✅
 - **Hard**: 0 ❌
 
 ---
