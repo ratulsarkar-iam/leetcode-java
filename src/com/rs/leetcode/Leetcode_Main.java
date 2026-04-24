@@ -1,5 +1,6 @@
 package com.rs.leetcode;
 
+import com.rs.leetcode.extra.Permutation_String;
 import com.rs.leetcode.med.Leetcode_46;
 
 public class Leetcode_Main {
@@ -11,7 +12,8 @@ public class Leetcode_Main {
         char[] s = new char[]{'h', 'e', 'l', 'l', 'o'};
         int[] nums = {1, 2, 3};
         System.out.println (leet.permute (nums));
-
+        Permutation_String permutationString= new Permutation_String ();
+        permutationString.printPermutationOfString ("abc");
     }
 
 }

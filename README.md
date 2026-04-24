@@ -42,6 +42,8 @@ leetcode-java/
 │   │           │   ├── Leetcode_509.java
 │   │           │   ├── Leetcode_704.java
 │   │           │   └── Leetcode_9.java
+│   │           ├── extra/          # Extra implementations
+│   │           │   └── Permutation_String.java
 │   │           ├── med/          # Medium difficulty problems
 │   │           │   ├── Leetcode_15.java
 │   │           │   ├── Leetcode_151.java
@@ -113,6 +115,11 @@ leetcode-java/
 | 704 | Binary Search | [Leetcode_704.java](src/com/rs/leetcode/easy/Leetcode_704.java) | O(log n) | O(1) |
 | 2965 | Find Missing and Repeated Values | [Leetcode_2965.java](src/com/rs/leetcode/easy/Leetcode_2965.java) | O(n^2) | O(n) |
 
+### Extra Problems
+| Problem # | Title | Solution | Time Complexity | Space Complexity |
+|-----------|-------|----------|-----------------|------------------|
+| - | Permutation String | [Permutation_String.java](src/com/rs/leetcode/extra/Permutation_String.java) | O(n! * n) | O(n) |
+
 ### Medium Problems
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
 |-----------|-------|----------|-----------------|------------------|
@@ -137,8 +144,8 @@ leetcode-java/
 - **Mathematical Operations** - Used in Palindrome Number problem
 - **Two Pointers** - Used in Reverse String problem
 - **TODO** - Used in Binary Search problem
+- **Backtracking** - Used in Permutation String problem
 - **Sorting** - Used in 3Sum problem
-- **Backtracking** - Used in Permutations problem
 - **Kadan's Algorithm** - Used in Maximum Subarray problem
 - **Binary Search** - Used in Search a 2D Matrix problem
 - **String Manipulation** - Used in Reverse Words in a String problem
