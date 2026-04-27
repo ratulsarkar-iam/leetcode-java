@@ -19,7 +19,7 @@
 # Ignore build directories
 /bin/
 /target/
-/src/com/rs/leetcode/practice/
+/src/com/rs/leetcode/prc/
 
 # Ignore OS-specific files
 .DS_Store

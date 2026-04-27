@@ -1,9 +1,6 @@
 package com.rs.leetcode;
 
-import com.rs.leetcode.extra.Permutation_String;
-import com.rs.leetcode.hard.Leetcode_51;
-import com.rs.leetcode.med.Leetcode_46;
-import com.rs.leetcode.practice.second_attempt.hard.L51_D1;
+import com.rs.leetcode.prc.L51_D1;
 
 public class Leetcode_Main {
 

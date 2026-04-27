@@ -1,4 +1,4 @@
-package com.rs.leetcode.practice.second_attempt.hard;
+package com.rs.leetcode.prc;
 
 import java.util.ArrayList;
 import java.util.List;
