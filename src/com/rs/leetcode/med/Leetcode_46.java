@@ -5,9 +5,9 @@ import java.util.Collections;
 import java.util.List;
 
 /* @LeetcodeMeta
- * @Title: Permutations
- * @TimeComplexity: O(n!*n)
- * @SpaceComplexity: O(n!+n)
+ * @Title: Permutations – Backtracking
+ * @TimeComplexity: O(n! * n)
+ * @SpaceComplexity: O(n! + n)
  * @Algorithm: Backtracking
  */
 
