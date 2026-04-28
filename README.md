@@ -45,6 +45,7 @@ leetcode-java/
 │   │           ├── extra/          # Extra implementations
 │   │           │   └── Permutation_String.java
 │   │           ├── hard/          # Hard difficulty problems
+│   │           │   ├── Leetcode_37.java
 │   │           │   └── Leetcode_51.java
 │   │           ├── med/          # Medium difficulty problems
 │   │           │   ├── Leetcode_15.java
@@ -59,8 +60,11 @@ leetcode-java/
 │   │           │   ├── Leetcode_74.java
 │   │           │   ├── Leetcode_78.java
 │   │           │   └── Leetcode_90.java
+│   │           ├── prc/          # Prc implementations
+│   │           │   └── L51_D1.java
 │   │           ├── Leetcode_Main.java  # Main test runner
 │   │           ├── MetaGenerator.java  # Main test runner
+│   │           ├── ProgressTracker.java  # Main test runner
 │   │           └── ReadmeUpdater.java  # README auto-updater
 │   └── module-info.java
 ├── README.md
@@ -117,23 +121,13 @@ leetcode-java/
 | 704 | Binary Search | [Leetcode_704.java](src/com/rs/leetcode/easy/Leetcode_704.java) | O(log n) | O(1) |
 | 2965 | Find Missing and Repeated Values | [Leetcode_2965.java](src/com/rs/leetcode/easy/Leetcode_2965.java) | O(n^2) | O(n) |
 
-### Hard Problems
-| Problem # | Title | Solution | Time Complexity | Space Complexity |
-|-----------|-------|----------|-----------------|------------------|
-| 51 | N-Queens | [Leetcode_51.java](src/com/rs/leetcode/hard/Leetcode_51.java) | O(n!) | O(n^2) |
-
-### Extra Problems
-| Problem # | Title | Solution | Time Complexity | Space Complexity |
-|-----------|-------|----------|-----------------|------------------|
-| - | Permutation String | [Permutation_String.java](src/com/rs/leetcode/extra/Permutation_String.java) | O(n! * n) | O(n) |
-
 ### Medium Problems
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
 |-----------|-------|----------|-----------------|------------------|
 | 7 | Reverse Integer | [Leetcode_7.java](src/com/rs/leetcode/med/Leetcode_7.java) | O(log n) | O(1) |
 | 15 | 3Sum | [Leetcode_15.java](src/com/rs/leetcode/med/Leetcode_15.java) | O(n^3) | O(n) |
 | 18 | 4Sum | [Leetcode_18.java](src/com/rs/leetcode/med/Leetcode_18.java) | O(n^4) | O(n) |
-| 46 | Permutations | [Leetcode_46.java](src/com/rs/leetcode/med/Leetcode_46.java) | O(n!*n) | O(n!+n) |
+| 46 | Permutations – Backtracking | [Leetcode_46.java](src/com/rs/leetcode/med/Leetcode_46.java) | O(n! * n) | O(n! + n) |
 | 50 | Pow(x, n) | [Leetcode_50.java](src/com/rs/leetcode/med/Leetcode_50.java) | O(log n) | O(1) |
 | 53 | Maximum Subarray | [Leetcode_53.java](src/com/rs/leetcode/med/Leetcode_53.java) | O(n) | O(1) |
 | 74 | Search a 2D Matrix | [Leetcode_74.java](src/com/rs/leetcode/med/Leetcode_74.java) | O(log(m * n)) | O(1) |
@@ -143,6 +137,12 @@ leetcode-java/
 | 204 | Count Primes | [Leetcode_204.java](src/com/rs/leetcode/med/Leetcode_204.java) | O(n log log n) | O(n) |
 | 240 | Search a 2D Matrix II | [Leetcode_240.java](src/com/rs/leetcode/med/Leetcode_240.java) | O(n log n) | O(1) |
 
+### Hard Problems
+| Problem # | Title | Solution | Time Complexity | Space Complexity |
+|-----------|-------|----------|-----------------|------------------|
+| 37 | Sudoku Solver | [Leetcode_37.java](src/com/rs/leetcode/hard/Leetcode_37.java) | O(9^m) | O(m) |
+| 51 | N-Queens | [Leetcode_51.java](src/com/rs/leetcode/hard/Leetcode_51.java) | O(n!) | O(n^2) |
+
 ## ✨ Solution Highlights
 
 ### Featured Algorithms
@@ -151,8 +151,8 @@ leetcode-java/
 - **Mathematical Operations** - Used in Palindrome Number problem
 - **Two Pointers** - Used in Reverse String problem
 - **TODO** - Used in Binary Search problem
-- **Backtracking** - Used in N-Queens problem
 - **Sorting** - Used in 3Sum problem
+- **Backtracking** - Used in Permutations – Backtracking problem
 - **Kadan's Algorithm** - Used in Maximum Subarray problem
 - **Binary Search** - Used in Search a 2D Matrix problem
 - **String Manipulation** - Used in Reverse Words in a String problem
@@ -194,10 +194,10 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 20
+- **Total Problems Solved**: 21
 - **Easy**: 7 ✅
 - **Medium**: 12 ✅
-- **Hard**: 1 ✅
+- **Hard**: 2 ✅
 
 ---
 

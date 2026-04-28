@@ -21,6 +21,13 @@
 /target/
 /src/com/rs/leetcode/prc/
 
+# Ignore Maven files
+dependency-reduced-pom.xml
+
+# Ignore Excel backup files
+~$*.xlsx
+*.tmp
+_DSA_Tracker.xlsx
 # Ignore OS-specific files
 .DS_Store
 Thumbs.db
