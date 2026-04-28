@@ -51,7 +51,7 @@ echo "----------------------------------------"
 echo ""
 
 # Check if Excel file was created/updated
-if [ -f "FAANG_DSA_Tracker.xlsx" ]; then
+if [ -f "_DSA_Tracker.xlsx" ]; then
     echo "✅ Excel file updated: FAANG_DSA_Tracker.xlsx"
     echo "📅 Last modified: $(date -r FAANG_DSA_Tracker.xlsx '+%Y-%m-%d %H:%M:%S')"
 else

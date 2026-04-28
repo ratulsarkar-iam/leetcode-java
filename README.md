@@ -45,6 +45,7 @@ leetcode-java/
 │   │           ├── extra/          # Extra implementations
 │   │           │   └── Permutation_String.java
 │   │           ├── hard/          # Hard difficulty problems
+│   │           │   ├── Code360_RatInAMaze.java
 │   │           │   ├── Leetcode_37.java
 │   │           │   └── Leetcode_51.java
 │   │           ├── med/          # Medium difficulty problems
@@ -142,6 +143,7 @@ leetcode-java/
 |-----------|-------|----------|-----------------|------------------|
 | 37 | Sudoku Solver | [Leetcode_37.java](src/com/rs/leetcode/hard/Leetcode_37.java) | O(9^m) | O(m) |
 | 51 | N-Queens | [Leetcode_51.java](src/com/rs/leetcode/hard/Leetcode_51.java) | O(n!) | O(n^2) |
+| - | Rat In A Maze | [Code360_RatInAMaze.java](src/com/rs/leetcode/hard/Code360_RatInAMaze.java) | O(4^(n^2)) | O(n^2) |
 
 ## ✨ Solution Highlights
 
@@ -194,10 +196,10 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 21
+- **Total Problems Solved**: 22
 - **Easy**: 7 ✅
 - **Medium**: 12 ✅
-- **Hard**: 2 ✅
+- **Hard**: 3 ✅
 
 ---
 
