@@ -144,8 +144,8 @@ leetcode-java/
 |-----------|-------|----------|-----------------|------------------|
 | 37 | Sudoku Solver | [Leetcode_37.java](src/com/rs/leetcode/hard/Leetcode_37.java) | O(9^m) | O(m) |
 | 51 | N-Queens | [Leetcode_51.java](src/com/rs/leetcode/hard/Leetcode_51.java) | O(n!) | O(n^2) |
-| - | Rat In A Maze | [Code360_RatInAMaze.java](src/com/rs/leetcode/hard/Code360_RatInAMaze.java) | O(3^(n^2)) | O(n^2) |
-| - | Rat In A Maze (Optimized) | [Code360_RatInAMaze_Optimized.java](src/com/rs/leetcode/hard/Code360_RatInAMaze_Optimized.java) | O(3^(n^2)) | O(n^2) |
+| - | Rat In A Maze | [Code360_RatInAMaze.java](src/com/rs/leetcode/hard/Code360_RatInAMaze.java) | O(4^(n^2)) | O(n^2) |
+| - | Rat In A Maze (Optimized) | [Code360_RatInAMaze_Optimized.java](src/com/rs/leetcode/hard/Code360_RatInAMaze_Optimized.java) | O(4^(n^2)) | O(n^2) |
 
 ## ✨ Solution Highlights
 

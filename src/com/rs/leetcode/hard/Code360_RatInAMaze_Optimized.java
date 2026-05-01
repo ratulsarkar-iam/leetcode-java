@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /* @LeetcodeMeta
  * @Title: Rat In A Maze (Optimized)
- * @TimeComplexity: O(3^(n^2))
+ * @TimeComplexity: O(4^(n^2))
  * @SpaceComplexity: O(n^2)
  * @Algorithm: Backtracking with In-place Marking
  */
