@@ -378,8 +378,8 @@ public class Leetcode_37 {
     private boolean isSafe (int rowId, int colId, char[][] board, char digit) {
         // CHECK 1: Row-wise validation
         // Scan entire row to see if digit already exists
-        for (int c = 0; c < board.length; c++) {
-            if (board[rowId][c] == digit) {
+        for (int cell : board[rowId]) {
+            if (cell == digit) {
                 return false; // Conflict in same row
             }
         }

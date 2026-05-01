@@ -46,6 +46,7 @@ leetcode-java/
 │   │           │   └── Permutation_String.java
 │   │           ├── hard/          # Hard difficulty problems
 │   │           │   ├── Code360_RatInAMaze.java
+│   │           │   ├── Code360_RatInAMaze_Optimized.java
 │   │           │   ├── Leetcode_37.java
 │   │           │   └── Leetcode_51.java
 │   │           ├── med/          # Medium difficulty problems
@@ -143,7 +144,8 @@ leetcode-java/
 |-----------|-------|----------|-----------------|------------------|
 | 37 | Sudoku Solver | [Leetcode_37.java](src/com/rs/leetcode/hard/Leetcode_37.java) | O(9^m) | O(m) |
 | 51 | N-Queens | [Leetcode_51.java](src/com/rs/leetcode/hard/Leetcode_51.java) | O(n!) | O(n^2) |
-| - | Rat In A Maze | [Code360_RatInAMaze.java](src/com/rs/leetcode/hard/Code360_RatInAMaze.java) | O(4^(n^2)) | O(n^2) |
+| - | Rat In A Maze | [Code360_RatInAMaze.java](src/com/rs/leetcode/hard/Code360_RatInAMaze.java) | O(3^(n^2)) | O(n^2) |
+| - | Rat In A Maze (Optimized) | [Code360_RatInAMaze_Optimized.java](src/com/rs/leetcode/hard/Code360_RatInAMaze_Optimized.java) | O(3^(n^2)) | O(n^2) |
 
 ## ✨ Solution Highlights
 
@@ -159,6 +161,7 @@ leetcode-java/
 - **Binary Search** - Used in Search a 2D Matrix problem
 - **String Manipulation** - Used in Reverse Words in a String problem
 - **Sieve of Eratosthenes** - Used in Count Primes problem
+- **Backtracking with In-place Marking** - Used in Rat In A Maze (Optimized) problem
 
 ### Key Learning Points
 
@@ -196,10 +199,10 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 22
+- **Total Problems Solved**: 23
 - **Easy**: 7 ✅
 - **Medium**: 12 ✅
-- **Hard**: 3 ✅
+- **Hard**: 4 ✅
 
 ---
 

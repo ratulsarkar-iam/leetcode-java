@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /* @LeetcodeMeta
  * @Title: Rat In A Maze
- * @TimeComplexity: O(4^(n^2))
+ * @TimeComplexity: O(3^(n^2))
  * @SpaceComplexity: O(n^2)
  * @Algorithm: Backtracking
  */
@@ -354,31 +354,36 @@ APPROACH: Depth-First Search with Backtracking
 KEY INSIGHT: Trying directions in lexicographic order (D, L, R, U)
 automatically ensures sorted output without additional sorting!
 
-TIME COMPLEXITY: O(4^(n^2)) in worst case
+TIME COMPLEXITY: O(3^(n^2)) in worst case
 -----------------------
-• For each cell: up to 4 choices (directions)
-• Maximum path length: n^2 (visiting every cell)
-• Total paths in worst case: 4^(n^2)
-• Each path construction takes O(n^2) time
+• At starting cell: up to 4 direction choices
+• At every subsequent cell: at most 3 choices
+  (the direction we came from is already marked visited)
+• Effective branching factor: 3, not 4
+• Maximum path length: n^2 (visiting every cell once)
+• Total recursive calls: O(3^(n^2)) in worst case
 
 Detailed breakdown:
-- Total recursive calls: O(4^(n^2)) in worst case
+- Total recursive calls: O(3^(n^2)) in worst case
 - Each call does O(1) work (boundary checks, marking)
-- Path string concatenation: O(n^2) per complete path
-- Overall: O(4^(n^2) + k×n^2) where k = number of paths
+- String concatenation (path+dir): O(d) at depth d
+- Total time: O(3^(n^2) × n^2) dominated by O(3^(n^2))
 
 Practical performance:
 - With many blocked cells: Much better than worst case
 - With constraints N ≤ 5: Maximum 25 cells
-- For N=5, worst case: 4^25 ≈ 10^15 operations (theoretical)
+- For N=5, worst case: 3^25 ≈ 8.5×10^11 operations (theoretical)
 - Real mazes have far fewer valid paths due to blocks
 
-SPACE COMPLEXITY: O(n^2)
+SPACE COMPLEXITY: O(n^2) auxiliary
 ------------------------
 • Visited matrix: O(n^2) - boolean[n][n]
 • Recursion stack: O(n^2) - maximum depth = path length
-• Path string storage: O(k×n^2) where k = number of paths
-• Total auxiliary space: O(n^2) (visited + stack dominates)
+• Path strings on stack: Σ(d for d=1..n^2) = O(n^4)
+  (Java creates new String at each depth via path+"D")
+  Note: This is a loose bound; strings are GC'd on backtrack
+• Output storage: O(k×n^2) where k = number of paths
+• Total auxiliary: O(n^2) [vMat + stack dominate for small n]
 
 OPTIMIZATION OPPORTUNITIES:
 --------------------------

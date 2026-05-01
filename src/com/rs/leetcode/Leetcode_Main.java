@@ -1,12 +1,13 @@
 package com.rs.leetcode;
 
 import com.rs.leetcode.hard.Code360_RatInAMaze;
+import com.rs.leetcode.hard.Code360_RatInAMaze_Optimized;
 
 public class Leetcode_Main {
 
     public static void main (String[] args) {
         // TODO Auto-generated method stub
-        Code360_RatInAMaze leet = new Code360_RatInAMaze ();
+        Code360_RatInAMaze_Optimized leet = new Code360_RatInAMaze_Optimized ();
         int[][] matrix = {{1, 0, 0, 0}, {1, 1, 0, 0}, {1, 1, 0, 0}, {0, 1, 1, 1}};
         char[] s = new char[]{'h', 'e', 'l', 'l', 'o'};
         int[] nums = {1, 2, 3};
