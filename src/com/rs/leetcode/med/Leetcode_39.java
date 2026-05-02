@@ -58,7 +58,9 @@ public class Leetcode_39 {
         }
         // add sumList
         sumList.add(candidates[i]);
-        // inclusion
+        // single inclusion
+//        combiSum(candidates, i + 1, target - candidates[i], sumList, retList);
+        // multi inclusion
         combiSum(candidates, i, target - candidates[i], sumList, retList);
         // backtrack
         sumList.remove(sumList.size() - 1);
