@@ -42,7 +42,8 @@ leetcode-java/
 │   │           │   ├── Leetcode_509.java
 │   │           │   ├── Leetcode_704.java
 │   │           │   └── Leetcode_9.java
-│   │           ├── extra/          # Extra implementations
+│   │           ├── extra/          # Extra difficulty problems
+│   │           │   ├── MergeSort.java
 │   │           │   └── Permutation_String.java
 │   │           ├── hard/          # Hard difficulty problems
 │   │           │   ├── Code360_RatInAMaze.java
@@ -152,6 +153,12 @@ leetcode-java/
 | - | Rat In A Maze | [Code360_RatInAMaze.java](src/com/rs/leetcode/hard/Code360_RatInAMaze.java) | O(4^(n^2)) | O(n^2) |
 | - | Rat In A Maze (Optimized) | [Code360_RatInAMaze_Optimized.java](src/com/rs/leetcode/hard/Code360_RatInAMaze_Optimized.java) | O(4^(n^2)) | O(n^2) |
 
+### Extra Problems
+| Problem # | Title | Solution | Time Complexity | Space Complexity |
+|-----------|-------|----------|-----------------|------------------|
+| - | Merge Sort | [MergeSort.java](src/com/rs/leetcode/extra/MergeSort.java) | O(n log n) | O(n) |
+| - | Permutation String | [Permutation_String.java](src/com/rs/leetcode/extra/Permutation_String.java) | O(n! * n) | O(n) |
+
 ## ✨ Solution Highlights
 
 ### Featured Algorithms
@@ -167,6 +174,7 @@ leetcode-java/
 - **String Manipulation** - Used in Reverse Words in a String problem
 - **Sieve of Eratosthenes** - Used in Count Primes problem
 - **Backtracking with In-place Marking** - Used in Rat In A Maze (Optimized) problem
+- **Divide and Conquer** - Used in Merge Sort problem
 
 ### Key Learning Points
 
