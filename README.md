@@ -50,6 +50,7 @@ leetcode-java/
 │   │           │   ├── Leetcode_37.java
 │   │           │   └── Leetcode_51.java
 │   │           ├── med/          # Medium difficulty problems
+│   │           │   ├── Leetcode_131.java
 │   │           │   ├── Leetcode_15.java
 │   │           │   ├── Leetcode_151.java
 │   │           │   ├── Leetcode_18.java
@@ -138,6 +139,7 @@ leetcode-java/
 | 74 | Search a 2D Matrix | [Leetcode_74.java](src/com/rs/leetcode/med/Leetcode_74.java) | O(log(m * n)) | O(1) |
 | 78 | Subsets | [Leetcode_78.java](src/com/rs/leetcode/med/Leetcode_78.java) | O(n × 2^n) | O(n) |
 | 90 | Subsets II | [Leetcode_90.java](src/com/rs/leetcode/med/Leetcode_90.java) | O(n × 2^n) | O(n) auxiliary |
+| 131 | Palindrome Partitioning | [Leetcode_131.java](src/com/rs/leetcode/med/Leetcode_131.java) | O(n × 2^n) | O(n^2) |
 | 151 | Reverse Words in a String | [Leetcode_151.java](src/com/rs/leetcode/med/Leetcode_151.java) | O(n) | O(n) |
 | 204 | Count Primes | [Leetcode_204.java](src/com/rs/leetcode/med/Leetcode_204.java) | O(n log log n) | O(n) |
 | 240 | Search a 2D Matrix II | [Leetcode_240.java](src/com/rs/leetcode/med/Leetcode_240.java) | O(n log n) | O(1) |
@@ -202,9 +204,9 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 24
+- **Total Problems Solved**: 25
 - **Easy**: 7 ✅
-- **Medium**: 13 ✅
+- **Medium**: 14 ✅
 - **Hard**: 4 ✅
 
 ---
