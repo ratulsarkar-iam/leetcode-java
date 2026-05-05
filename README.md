@@ -113,7 +113,17 @@ leetcode-java/
    javac src/com/rs/leetcode/Leetcode_Main.java
    java -cp src com.rs.leetcode.Leetcode_Main
    ```
+<!-- README_UPDATER_SKIP_START -->
+## 📊 Algorithm Comparison
 
+| Algorithm | Best Case | Average Case | Worst Case | Space Complexity | Stable |
+|-----------|-----------|--------------|------------|------------------|--------|
+| **Merge Sort** | `O(n log n)` | `O(n log n)` | `O(n log n)` | `O(n)` | ✅ Yes |
+| **Quick Sort** | `O(n log n)` | `O(n log n)` | `O(n²)` | `O(log n)` | ❌ No |
+| **Heap Sort** | `O(n log n)` | `O(n log n)` | `O(n log n)` | `O(1)` | ❌ No |
+| **Insertion Sort** | `O(n)` | `O(n²)` | `O(n²)` | `O(1)` | ✅ Yes |
+| **Bubble Sort** | `O(n)` | `O(n²)` | `O(n²)` | `O(1)` | ✅ Yes |
+<!-- README_UPDATER_SKIP_END -->
 ## 📚 Problem Categories
 
 ### Easy Problems
