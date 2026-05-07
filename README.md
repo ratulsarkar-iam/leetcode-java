@@ -43,6 +43,7 @@ leetcode-java/
 │   │           │   ├── Leetcode_704.java
 │   │           │   └── Leetcode_9.java
 │   │           ├── extra/          # Extra difficulty problems
+│   │           │   ├── InversionsCount.java
 │   │           │   ├── MergeSort.java
 │   │           │   ├── Permutation_String.java
 │   │           │   └── QuickSort.java
@@ -167,6 +168,7 @@ leetcode-java/
 ### Extra Problems
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
 |-----------|-------|----------|-----------------|------------------|
+| - | Count Inversions | [InversionsCount.java](src/com/rs/leetcode/extra/InversionsCount.java) | O(n log n) | O(n) |
 | - | Merge Sort | [MergeSort.java](src/com/rs/leetcode/extra/MergeSort.java) | O(n log n) | O(n) |
 | - | Permutation String | [Permutation_String.java](src/com/rs/leetcode/extra/Permutation_String.java) | O(n! * n) | O(n) |
 | - | Quick Sort | [QuickSort.java](src/com/rs/leetcode/extra/QuickSort.java) | O(n log n) avg, O(n^2) worst | O(log n) |
@@ -186,6 +188,7 @@ leetcode-java/
 - **String Manipulation** - Used in Reverse Words in a String problem
 - **Sieve of Eratosthenes** - Used in Count Primes problem
 - **Backtracking with In-place Marking** - Used in Rat In A Maze (Optimized) problem
+- **Modified Merge Sort** - Used in Count Inversions problem
 - **Divide and Conquer** - Used in Merge Sort problem
 
 ### Key Learning Points
