@@ -44,7 +44,8 @@ leetcode-java/
 │   │           │   └── Leetcode_9.java
 │   │           ├── extra/          # Extra difficulty problems
 │   │           │   ├── MergeSort.java
-│   │           │   └── Permutation_String.java
+│   │           │   ├── Permutation_String.java
+│   │           │   └── QuickSort.java
 │   │           ├── hard/          # Hard difficulty problems
 │   │           │   ├── Code360_RatInAMaze.java
 │   │           │   ├── Code360_RatInAMaze_Optimized.java
@@ -116,13 +117,13 @@ leetcode-java/
 <!-- README_UPDATER_SKIP_START -->
 ## 📊 Algorithm Comparison
 
-| Algorithm | Best Case | Average Case | Worst Case | Space Complexity | Stable |
-|-----------|-----------|--------------|------------|------------------|--------|
-| **Merge Sort** | `O(n log n)` | `O(n log n)` | `O(n log n)` | `O(n)` | ✅ Yes |
-| **Quick Sort** | `O(n log n)` | `O(n log n)` | `O(n²)` | `O(log n)` | ❌ No |
-| **Heap Sort** | `O(n log n)` | `O(n log n)` | `O(n log n)` | `O(1)` | ❌ No |
-| **Insertion Sort** | `O(n)` | `O(n²)` | `O(n²)` | `O(1)` | ✅ Yes |
-| **Bubble Sort** | `O(n)` | `O(n²)` | `O(n²)` | `O(1)` | ✅ Yes |
+| Algorithm | Best Case | Average Case | Worst Case | Space Complexity | Stable | When to Use | Key Trait |
+|-----------|-----------|--------------|------------|------------------|--------|-------------|-----------|
+| **Merge Sort** | `O(n log n)` | `O(n log n)` | `O(n log n)` | `O(n)` | ✅ Yes | Linked lists, external sorting, need stable sort | Divide & conquer; guaranteed `O(n log n)` always |
+| **Quick Sort** | `O(n log n)` | `O(n log n)` | `O(n²)` | `O(log n)` | ❌ No | General-purpose in-memory sort, large arrays | Fastest in practice; pivot choice is critical |
+| **Heap Sort** | `O(n log n)` | `O(n log n)` | `O(n log n)` | `O(1)` | ❌ No | Memory-constrained, need guaranteed `O(n log n)` | In-place; uses max-heap; not cache-friendly |
+| **Insertion Sort** | `O(n)` | `O(n²)` | `O(n²)` | `O(1)` | ✅ Yes | Small / nearly-sorted arrays, online sorting | Simple & fast for tiny `n`; adaptive |
+| **Bubble Sort** | `O(n)` | `O(n²)` | `O(n²)` | `O(1)` | ✅ Yes | Educational purposes only | Rarely used in practice; easy to understand |
 <!-- README_UPDATER_SKIP_END -->
 ## 📚 Problem Categories
 
@@ -168,6 +169,7 @@ leetcode-java/
 |-----------|-------|----------|-----------------|------------------|
 | - | Merge Sort | [MergeSort.java](src/com/rs/leetcode/extra/MergeSort.java) | O(n log n) | O(n) |
 | - | Permutation String | [Permutation_String.java](src/com/rs/leetcode/extra/Permutation_String.java) | O(n! * n) | O(n) |
+| - | Quick Sort | [QuickSort.java](src/com/rs/leetcode/extra/QuickSort.java) | O(n log n) avg, O(n^2) worst | O(log n) |
 
 ## ✨ Solution Highlights
 
