@@ -59,6 +59,7 @@ leetcode-java/
 │   │           │   ├── Leetcode_18.java
 │   │           │   ├── Leetcode_204.java
 │   │           │   ├── Leetcode_240.java
+│   │           │   ├── Leetcode_2596.java
 │   │           │   ├── Leetcode_39.java
 │   │           │   ├── Leetcode_46.java
 │   │           │   ├── Leetcode_50.java
@@ -156,6 +157,7 @@ leetcode-java/
 | 151 | Reverse Words in a String | [Leetcode_151.java](src/com/rs/leetcode/med/Leetcode_151.java) | O(n) | O(n) |
 | 204 | Count Primes | [Leetcode_204.java](src/com/rs/leetcode/med/Leetcode_204.java) | O(n log log n) | O(n) |
 | 240 | Search a 2D Matrix II | [Leetcode_240.java](src/com/rs/leetcode/med/Leetcode_240.java) | O(n log n) | O(1) |
+| 2596 | Check Knight Tour Configuration | [Leetcode_2596.java](src/com/rs/leetcode/med/Leetcode_2596.java) | O(8^(n^2)) | O(n^2) |
 
 ### Hard Problems
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
@@ -187,6 +189,7 @@ leetcode-java/
 - **Binary Search** - Used in Search a 2D Matrix problem
 - **String Manipulation** - Used in Reverse Words in a String problem
 - **Sieve of Eratosthenes** - Used in Count Primes problem
+- **Backtracking/DFS** - Used in Check Knight Tour Configuration problem
 - **Backtracking with In-place Marking** - Used in Rat In A Maze (Optimized) problem
 - **Modified Merge Sort** - Used in Count Inversions problem
 - **Divide and Conquer** - Used in Merge Sort problem
@@ -227,9 +230,9 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 25
+- **Total Problems Solved**: 26
 - **Easy**: 7 ✅
-- **Medium**: 14 ✅
+- **Medium**: 15 ✅
 - **Hard**: 4 ✅
 
 ---
