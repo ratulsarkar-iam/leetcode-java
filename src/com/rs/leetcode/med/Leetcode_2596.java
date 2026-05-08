@@ -202,7 +202,15 @@ public class Leetcode_2596 {
         if (expValue == size * size - 1) {
             return true;
         }
-        
+        // boolean a1 = canMoveKnight (grid, r - 2, c + 1, size, expValue + 1);
+        // boolean a2 = canMoveKnight (grid, r - 1, c + 2, size, expValue + 1);
+        // boolean a3 = canMoveKnight (grid, r + 1, c + 2, size, expValue + 1);
+        // boolean a4 = canMoveKnight (grid, r + 2, c + 1, size, expValue + 1);
+        // boolean a5 = canMoveKnight (grid, r + 2, c - 1, size, expValue + 1);
+        // boolean a6 = canMoveKnight (grid, r + 1, c - 2, size, expValue + 1);
+        // boolean a7 = canMoveKnight (grid, r - 1, c - 2, size, expValue + 1);
+        // boolean a8 = canMoveKnight (grid, r - 2, c - 1, size, expValue + 1);
+        // return a1 || a2 || a3 || a4 || a5 || a6 || a7 || a8;
         // RECURSE: Try all 8 possible knight moves
         // Each move searches for the next expected value (expValue + 1)
         

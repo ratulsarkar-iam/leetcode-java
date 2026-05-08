@@ -11,6 +11,8 @@ A comprehensive collection of LeetCode problem solutions implemented in Java 17.
 - [Project Overview](#-project-overview)
 - [Project Structure](#-project-structure)
 - [Getting Started](#-getting-started)
+- [Binary Reference](#-binary-reference)
+- [Bitwise Operations for DSA](#-bitwise-operations-for-dsa)
 - [Problem Categories](#-problem-categories)
 - [Solution Highlights](#-solution-highlights)
 - [Contributing](#-contributing)
@@ -36,6 +38,7 @@ leetcode-java/
 │   │       └── leetcode/
 │   │           ├── easy/          # Easy difficulty problems
 │   │           │   ├── Leetcode_1.java
+│   │           │   ├── Leetcode_136.java
 │   │           │   ├── Leetcode_169.java
 │   │           │   ├── Leetcode_2965.java
 │   │           │   ├── Leetcode_344.java
@@ -117,7 +120,68 @@ leetcode-java/
    java -cp src com.rs.leetcode.Leetcode_Main
    ```
 <!-- README_UPDATER_SKIP_START -->
-## 📊 Algorithm Comparison
+## � Binary Reference
+
+| Decimal | Binary | Hex |
+|---------|--------|-----|
+| `0` | `0000` | `0x0` |
+| `1` | `0001` | `0x1` |
+| `2` | `0010` | `0x2` |
+| `3` | `0011` | `0x3` |
+| `4` | `0100` | `0x4` |
+| `5` | `0101` | `0x5` |
+| `6` | `0110` | `0x6` |
+| `7` | `0111` | `0x7` |
+| `8` | `1000` | `0x8` |
+| `9` | `1001` | `0x9` |
+| `10` | `1010` | `0xA` |
+<!-- README_UPDATER_SKIP_END -->
+
+<!-- README_UPDATER_SKIP_START -->
+## 🧮 Bitwise Operations for DSA
+
+### Operators
+
+| Operator | Symbol | Description | Example |
+|----------|--------|-------------|---------|
+| **AND** | `&` | 1 if both bits are 1 | `5 & 3` → `0101 & 0011` = `0001` = `1` |
+| **OR** | `\|` | 1 if at least one bit is 1 | `5 \| 3` → `0101 \| 0011` = `0111` = `7` |
+| **XOR** | `^` | 1 if bits are different | `5 ^ 3` → `0101 ^ 0011` = `0110` = `6` |
+| **NOT** | `~` | Flips all bits | `~5` → `~0101` = `1010` = `-6` (2's complement) |
+| **Left Shift** | `<<` | Shifts bits left (× 2) | `5 << 1` → `0101 << 1` = `1010` = `10` |
+| **Right Shift** | `>>` | Shifts bits right (÷ 2) | `10 >> 1` → `1010 >> 1` = `0101` = `5` |
+| **Unsigned Right Shift** | `>>>` | Shifts right, fills 0 | `-1 >>> 1` = `2147483647` |
+
+### Common DSA Tricks
+
+| Trick | Code | Description |
+|-------|------|-------------|
+| Check if even/odd | `n & 1 == 0` | Even if last bit is 0 |
+| Multiply by 2 | `n << 1` | Left shift by 1 |
+| Divide by 2 | `n >> 1` | Right shift by 1 |
+| Check k-th bit | `(n >> k) & 1` | Isolate bit at position k |
+| Set k-th bit | `n \| (1 << k)` | Turn on bit at position k |
+| Clear k-th bit | `n & ~(1 << k)` | Turn off bit at position k |
+| Toggle k-th bit | `n ^ (1 << k)` | Flip bit at position k |
+| Clear lowest set bit | `n & (n - 1)` | Removes rightmost 1-bit |
+| Isolate lowest set bit | `n & (-n)` | Keeps only rightmost 1-bit |
+| Check power of 2 | `n > 0 && (n & (n-1)) == 0` | Powers of 2 have one set bit |
+| Count set bits | `Integer.bitCount(n)` | Count 1-bits (Java) |
+| XOR duplicate finder | `a ^ a == 0` | Same value XOR cancels out |
+| Swap without temp | `a^=b; b^=a; a^=b;` | XOR swap trick |
+
+### Key Properties
+
+- `x ^ x = 0` — XOR of a number with itself is 0
+- `x ^ 0 = x` — XOR with 0 keeps value unchanged
+- `x & (x-1)` — clears the lowest set bit
+- `n & (-n)` — isolates the lowest set bit (used in Fenwick Trees)
+- Left shift `n << k` = multiply by `2^k`
+- Right shift `n >> k` = divide by `2^k`
+<!-- README_UPDATER_SKIP_END -->
+
+<!-- README_UPDATER_SKIP_START -->
+## �📊 Algorithm Comparison
 
 | Algorithm | Best Case | Average Case | Worst Case | Space Complexity | Stable | When to Use | Key Trait |
 |-----------|-----------|--------------|------------|------------------|--------|-------------|-----------|
@@ -134,6 +198,7 @@ leetcode-java/
 |-----------|-------|----------|-----------------|------------------|
 | 1 | Two Sum | [Leetcode_1.java](src/com/rs/leetcode/easy/Leetcode_1.java) | O(n) | O(n) |
 | 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n) | O(1) |
+| 136 | Single Number | [Leetcode_136.java](src/com/rs/leetcode/easy/Leetcode_136.java) | O(n) | O(1) |
 | 169 | Majority Element | [Leetcode_169.java](src/com/rs/leetcode/easy/Leetcode_169.java) | O(n) | O(n) |
 | 344 | Reverse String | [Leetcode_344.java](src/com/rs/leetcode/easy/Leetcode_344.java) | O(n) | O(1) |
 | 509 | Fibonacci Number | [Leetcode_509.java](src/com/rs/leetcode/easy/Leetcode_509.java) | Golden Ratio (O(1.618)^n) | - |
@@ -181,6 +246,7 @@ leetcode-java/
 
 - **Hash Map** - Used in Two Sum problem
 - **Mathematical Operations** - Used in Palindrome Number problem
+- **Bit Manipulation (XOR)** - Used in Single Number problem
 - **Two Pointers** - Used in Reverse String problem
 - **TODO** - Used in Binary Search problem
 - **Sorting** - Used in 3Sum problem
@@ -230,8 +296,8 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 26
-- **Easy**: 7 ✅
+- **Total Problems Solved**: 27
+- **Easy**: 8 ✅
 - **Medium**: 15 ✅
 - **Hard**: 4 ✅
 
