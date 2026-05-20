@@ -39,14 +39,18 @@ leetcode-java/
 │   │           ├── easy/          # Easy difficulty problems
 │   │           │   ├── Leetcode_1.java
 │   │           │   ├── Leetcode_136.java
+│   │           │   ├── Leetcode_141.java
 │   │           │   ├── Leetcode_169.java
+│   │           │   ├── Leetcode_206.java
 │   │           │   ├── Leetcode_2965.java
 │   │           │   ├── Leetcode_344.java
 │   │           │   ├── Leetcode_509.java
 │   │           │   ├── Leetcode_704.java
+│   │           │   ├── Leetcode_876.java
 │   │           │   └── Leetcode_9.java
 │   │           ├── extra/          # Extra difficulty problems
 │   │           │   ├── InversionsCount.java
+│   │           │   ├── ListNode.java
 │   │           │   ├── MergeSort.java
 │   │           │   ├── Permutation_String.java
 │   │           │   └── QuickSort.java
@@ -57,6 +61,7 @@ leetcode-java/
 │   │           │   └── Leetcode_51.java
 │   │           ├── med/          # Medium difficulty problems
 │   │           │   ├── Leetcode_131.java
+│   │           │   ├── Leetcode_142.java
 │   │           │   ├── Leetcode_15.java
 │   │           │   ├── Leetcode_151.java
 │   │           │   ├── Leetcode_18.java
@@ -72,6 +77,7 @@ leetcode-java/
 │   │           │   ├── Leetcode_78.java
 │   │           │   └── Leetcode_90.java
 │   │           ├── prc/          # Prc implementations
+│   │           │   ├── L169_D1.java
 │   │           │   ├── L37_D1.java
 │   │           │   └── L51_D1.java
 │   │           ├── Leetcode_Main.java  # Main test runner
@@ -199,10 +205,13 @@ leetcode-java/
 | 1 | Two Sum | [Leetcode_1.java](src/com/rs/leetcode/easy/Leetcode_1.java) | O(n) | O(n) |
 | 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n) | O(1) |
 | 136 | Single Number | [Leetcode_136.java](src/com/rs/leetcode/easy/Leetcode_136.java) | O(n) | O(1) |
+| 141 | Linked List Cycle | [Leetcode_141.java](src/com/rs/leetcode/easy/Leetcode_141.java) | O(n) | O(1) |
 | 169 | Majority Element | [Leetcode_169.java](src/com/rs/leetcode/easy/Leetcode_169.java) | O(n) | O(n) |
+| 206 | Reverse Linked List | [Leetcode_206.java](src/com/rs/leetcode/easy/Leetcode_206.java) | O(n) | O(1) |
 | 344 | Reverse String | [Leetcode_344.java](src/com/rs/leetcode/easy/Leetcode_344.java) | O(n) | O(1) |
 | 509 | Fibonacci Number | [Leetcode_509.java](src/com/rs/leetcode/easy/Leetcode_509.java) | Golden Ratio (O(1.618)^n) | - |
 | 704 | Binary Search | [Leetcode_704.java](src/com/rs/leetcode/easy/Leetcode_704.java) | O(log n) | O(1) |
+| 876 | Middle of the Linked List | [Leetcode_876.java](src/com/rs/leetcode/easy/Leetcode_876.java) | O(n) | O(1) |
 | 2965 | Find Missing and Repeated Values | [Leetcode_2965.java](src/com/rs/leetcode/easy/Leetcode_2965.java) | O(n^2) | O(n) |
 
 ### Medium Problems
@@ -219,6 +228,7 @@ leetcode-java/
 | 78 | Subsets | [Leetcode_78.java](src/com/rs/leetcode/med/Leetcode_78.java) | O(n × 2^n) | O(n) |
 | 90 | Subsets II | [Leetcode_90.java](src/com/rs/leetcode/med/Leetcode_90.java) | O(n × 2^n) | O(n) auxiliary |
 | 131 | Palindrome Partitioning | [Leetcode_131.java](src/com/rs/leetcode/med/Leetcode_131.java) | O(n × 2^n) | O(n^2) |
+| 142 | Linked List Cycle II | [Leetcode_142.java](src/com/rs/leetcode/med/Leetcode_142.java) | O(n) | O(1) |
 | 151 | Reverse Words in a String | [Leetcode_151.java](src/com/rs/leetcode/med/Leetcode_151.java) | O(n) | O(n) |
 | 204 | Count Primes | [Leetcode_204.java](src/com/rs/leetcode/med/Leetcode_204.java) | O(n log log n) | O(n) |
 | 240 | Search a 2D Matrix II | [Leetcode_240.java](src/com/rs/leetcode/med/Leetcode_240.java) | O(n log n) | O(1) |
@@ -236,6 +246,7 @@ leetcode-java/
 | Problem # | Title | Solution | Time Complexity | Space Complexity |
 |-----------|-------|----------|-----------------|------------------|
 | - | Count Inversions | [InversionsCount.java](src/com/rs/leetcode/extra/InversionsCount.java) | O(n log n) | O(n) |
+| - | Leetcode -1 | [ListNode.java](src/com/rs/leetcode/extra/ListNode.java) | - | - |
 | - | Merge Sort | [MergeSort.java](src/com/rs/leetcode/extra/MergeSort.java) | O(n log n) | O(n) |
 | - | Permutation String | [Permutation_String.java](src/com/rs/leetcode/extra/Permutation_String.java) | O(n! * n) | O(n) |
 | - | Quick Sort | [QuickSort.java](src/com/rs/leetcode/extra/QuickSort.java) | O(n log n) avg, O(n^2) worst | O(log n) |
@@ -247,8 +258,11 @@ leetcode-java/
 - **Hash Map** - Used in Two Sum problem
 - **Mathematical Operations** - Used in Palindrome Number problem
 - **Bit Manipulation (XOR)** - Used in Single Number problem
+- **Two Pointers (Floyd's Tortoise and Hare)** - Used in Linked List Cycle problem
+- **Iterative Three Pointers** - Used in Reverse Linked List problem
 - **Two Pointers** - Used in Reverse String problem
 - **TODO** - Used in Binary Search problem
+- **Two Pointers (Slow-Fast)** - Used in Middle of the Linked List problem
 - **Sorting** - Used in 3Sum problem
 - **Backtracking** - Used in Combination Sum problem
 - **Kadan's Algorithm** - Used in Maximum Subarray problem
@@ -296,9 +310,9 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 27
-- **Easy**: 8 ✅
-- **Medium**: 15 ✅
+- **Total Problems Solved**: 31
+- **Easy**: 11 ✅
+- **Medium**: 16 ✅
 - **Hard**: 4 ✅
 
 ---
