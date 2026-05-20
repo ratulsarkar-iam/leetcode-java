@@ -169,19 +169,24 @@ import com.rs.leetcode.easy.Leetcode_206;
 public class Leetcode_142 {
     /**
      * Detects and returns the node where a linked list cycle begins
+     * Also removes the cycle by breaking the link before the cycle start
      * 
      * @param head The head of the linked list to check
      * @return The node where the cycle begins, or null if no cycle exists
      * 
      * Time: O(n) - two phases, each at most O(n)
-     * Space: O(1) - only uses two pointers
+     * Space: O(1) - only uses two pointers plus prevNode
      * 
-     * ALGORITHM: Two-Phase Floyd's Algorithm
+     * ALGORITHM: Two-Phase Floyd's Algorithm with Cycle Removal
      * Phase 1: Detect cycle using slow-fast pointers
      * Phase 2: Find cycle start by resetting slow to head
+     * Extra: Remove cycle by setting prevNode.next = null
      * 
      * KEY INSIGHT: When slow and fast meet, the distance from head to
      * cycle start equals the distance from meeting point to cycle start.
+     * 
+     * NOTE: The cycle removal tracks the previous node during Phase 2
+     * and breaks the cycle when the cycle start is found.
      */
     public Leetcode_206.ListNode detectCycle(Leetcode_206.ListNode head) {
         Leetcode_206.ListNode retNode = null;
@@ -205,15 +210,23 @@ public class Leetcode_142 {
         if (isCycle) {
             // Reset slow to head, keep fast at meeting point
             slowP = head;
+            // Track previous node to remove cycle - extra
+            Leetcode_206.ListNode prevNode = null;
             
             // Move both at same speed until they meet
             // Meeting point is the cycle start
             while (slowP != fastP) {
+                prevNode = fastP;  // Track previous node before moving
                 slowP = slowP.next;
                 fastP = fastP.next;
             }
             
-            retNode = slowP; // Cycle start node
+            // Remove the cycle by setting the last node's next to null
+            if (prevNode != null) {
+                prevNode.next = null;
+            }
+            
+            retNode = slowP; // or fastP // Cycle start node
         }
         
         return retNode;

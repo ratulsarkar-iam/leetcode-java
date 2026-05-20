@@ -42,6 +42,7 @@ leetcode-java/
 │   │           │   ├── Leetcode_141.java
 │   │           │   ├── Leetcode_169.java
 │   │           │   ├── Leetcode_206.java
+│   │           │   ├── Leetcode_21.java
 │   │           │   ├── Leetcode_2965.java
 │   │           │   ├── Leetcode_344.java
 │   │           │   ├── Leetcode_509.java
@@ -204,6 +205,7 @@ leetcode-java/
 |-----------|-------|----------|-----------------|------------------|
 | 1 | Two Sum | [Leetcode_1.java](src/com/rs/leetcode/easy/Leetcode_1.java) | O(n) | O(n) |
 | 9 | Palindrome Number | [Leetcode_9.java](src/com/rs/leetcode/easy/Leetcode_9.java) | O(log n) | O(1) |
+| 21 | Merge Two Sorted Lists | [Leetcode_21.java](src/com/rs/leetcode/easy/Leetcode_21.java) | O(n + m) | O(n + m) |
 | 136 | Single Number | [Leetcode_136.java](src/com/rs/leetcode/easy/Leetcode_136.java) | O(n) | O(1) |
 | 141 | Linked List Cycle | [Leetcode_141.java](src/com/rs/leetcode/easy/Leetcode_141.java) | O(n) | O(1) |
 | 169 | Majority Element | [Leetcode_169.java](src/com/rs/leetcode/easy/Leetcode_169.java) | O(n) | O(n) |
@@ -257,6 +259,7 @@ leetcode-java/
 
 - **Hash Map** - Used in Two Sum problem
 - **Mathematical Operations** - Used in Palindrome Number problem
+- **Recursion** - Used in Merge Two Sorted Lists problem
 - **Bit Manipulation (XOR)** - Used in Single Number problem
 - **Two Pointers (Floyd's Tortoise and Hare)** - Used in Linked List Cycle problem
 - **Iterative Three Pointers** - Used in Reverse Linked List problem
@@ -310,8 +313,8 @@ This repository is intended for **educational purposes only**. The solutions pro
 
 ## 📈 Progress Tracking
 
-- **Total Problems Solved**: 31
-- **Easy**: 11 ✅
+- **Total Problems Solved**: 32
+- **Easy**: 12 ✅
 - **Medium**: 16 ✅
 - **Hard**: 4 ✅
 
