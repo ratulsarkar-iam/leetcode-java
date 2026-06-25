@@ -1,1 +1,0 @@
-create the documnetation, detailing, tc and sc like other classes before .
